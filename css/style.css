@@ -1,0 +1,381 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100hv;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 243, 243);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* __________________________________nav bar__________________ */
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    background-color: rgb(1, 116, 116);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+}
+
+.nav-letf{
+    flex: 1;
+}
+
+.nav-center{
+    flex: 2;
+    margin-left: 20px;
+}
+
+.nav-right{
+    flex: 1;
+    margin-top: 20px;
+}
+
+.nav-right ul li{
+    list-style: none;
+}
+
+.nav-right ul, li, a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+form, #search{
+    /* outline: none; */
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    width: 90%;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+
+.nav-right img{
+    width: 30px;
+    margin-left: 30px;
+}
+
+.nav-letf img{
+    width: 35%;
+}
+
+.banner img{
+    width: 100%;
+    height: 70vh;
+}
+
+/* _______________________________sell style____________________ */
+.title{
+    text-align: center;
+    margin-top: 50px;
+}
+/* ________________________table style__________________________ */
+#my-table{
+    background: rgb(191, 201, 199);
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+}
+
+th, td{
+    border: 1px solid rgb(152, 152, 152);
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    table-layout:fixed;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+thead tr th{
+    background-color: #02393a;
+    color: white;
+    padding: 40px;
+}
+
+img, #cloth{
+    width: 160px;
+    margin-right: 10px;
+}
+
+#img-edit, #img-delete{
+   width: 44px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.creatBtn{
+    margin-top: 30px;
+    margin-left: 4%;
+    padding: 5px;
+    font-size: 20px;
+    width: 10%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(5, 90, 83);
+    color: white;
+}
+/* _________________________________dialog style_____________________ */
+dialog {
+    position: fixed;
+    top: 20vh;
+    left: 30%;
+    width: 30%;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 0;
+    margin-left: 20px;
+    overflow: hidden;
+}
+dialog section {
+    padding: 1rem;
+}
+
+dialog menu {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}
+
+input[type=text], input[type = number], 
+ select{
+    padding: 7px;
+    width: 96%;
+    display: flex;
+    margin: 10px 0;
+}
+button {
+    margin: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    font-family: inherit;
+    background-color: rgb(5, 90, 83);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+  
+button:hover,
+button:active {
+    background-color:  rgb(1, 56, 52);
+  }
+  
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.button:hover {
+    border: 1px solid rgb(15, 15, 15);
+    background-color: rgb(233, 233, 233);
+}
+
+/*  ______________________________________customer style__________________ */
+.card-detail{
+    display: flex;
+}
+.photo-detail img{
+    margin-top: 20px;
+    background: #000;
+    height: 30vh;
+
+}
+.text-job p {
+    font-size: 50px;
+    text-align: center;
+}
+
+.list-product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%; 
+    margin: 20px;
+
+}
+.card-product{
+    height: 68vh;
+    background: rgb(191, 201, 199);
+    margin: 17px;
+    width: 22%;
+    border-radius: 5px;
+}
+
+.img-product img{
+  
+    height: 42vh; 
+    padding: 15px;
+    width: 90%;
+
+}
+.card-product:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#description, #name, #price{
+    margin-left: 10px;
+    margin-top: -0px;
+}
+#price{
+    font-size: 20px;
+}
+.btn-buy{
+
+    border-radius: 5px;
+    width: 220px; 
+    padding: 10px; 
+    margin-top: -10px;
+    margin-left: 23px;
+    color: white;  
+}
+
+/* add card buy product */
+
+.product-buy{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product-buy{
+    display: flex;
+     margin: 10px;
+     margin-left: 100px;
+}
+.card-buy{
+    width: 90%;
+    display: flex;
+    margin: 20px;
+    border-radius: 5px;
+    background: rgb(191, 201, 199);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+/* .card-buy:hover{
+    width: 20%;
+} */
+.img-product-buy{
+    padding: 20px;
+}
+
+.price-description{
+    flex: 1;
+
+}
+#name-buy{
+    font-size: 20px;
+}
+#description-buy {
+    word-break: break-all;
+    width: 60%;
+
+}
+
+#input-number, [type = number]{
+    width: 20%;
+    height: 13px;
+    margin-top: 10px;
+}
+
+#img-delet {
+    width: 30px;
+}
+
+#btn-delete{ 
+    background-color: rgb(1, 116, 116);
+    border-radius: 4px;
+    width: 90px; 
+    margin-right: 10px;
+    border: none;
+    padding: 10px; 
+    margin-right: 30px;
+    margin-top: 100px;
+    color: white;  
+}
+#total, h2{
+    margin-left: 30px;
+}
+#icon-star, i{
+    color: rgba(241, 191, 10, 0.986);
+}
+.call, i{
+    color: aliceblue;
+}
+.card-total{
+    position: sticky;
+    bottom: 0;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 82%;
+    height: 15vh;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(1, 116, 116);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+ 
+}
+.buy-now{
+    background-color: rgb(1, 74, 52);
+    border-radius: 4px;
+    width: 90px; 
+    border: none;
+    padding: 10px; 
+    color: white;  
+    text-align: center;
+   
+}
+/* ____________________________________footer style__________________ */
+footer{
+    background-color: rgb(5, 90, 83);
+    color: rgb(232, 227, 227);
+    display: flex;
+    margin-top: 68px;
+    padding: 20px;
+   
+}
+.logo-buttom{
+
+    margin-left: 20px;
+    width: 25%;
+    
+}
+.logo-buttom img{
+    width: 13%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footer-right{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    
+}
+

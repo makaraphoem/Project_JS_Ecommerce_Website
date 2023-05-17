@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Seller</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-left">
+                <a href="#"><img src="../../img/ecommer-logo.png"></a>
+            </div>
+            <div class="nav-center">
+                <form class="example" action="/action_page.php">
+                    <input type="text" onkeyup = "searchProduct()" placeholder="Search.."  id = "search">
+                </form>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="../../index.html">Customer</a>
+                        <a href="/view/seller/seller.html">Seller</a>
+                        <a href="../addCard/addCard.html"><img src="../../img/cart.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+        <h1 class="title">SELL YOUR PRODUCT HERE</h1>  
+        <button class="creatBtn" onclick="addBtn()">Create </button>
+        <table id="my-table" >   
+            <thead class="header">
+                <tr>
+                    <th>ID</th>
+                    <th>img</th>
+                    <th> Name</th>
+                    <th> Description</th>
+                    <th>Price</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+            <tbody id="body-table">
+                 <!-- <tr class="tr-container"> 
+                    <td id="idu"></td>
+                    <td id="img-product">
+                        <img id="cloth" src="../../img/17.jpg" alt="">
+                    </td>
+                    <td id="name">j</td>
+                    <td id="description">jkj</td>
+                    <td id="price">jkkjkjkjkjk</td>
+                    <td id="actions">jkjkjkjkj</td>
+                </tr >
+                 <tr class="tr-container"> 
+                    <td id="idu">jkjkjk</td>
+                    <td id="img-product">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Flirikamatoshi.com%2Fproducts%2Fstrawberry-midi-dress&psig=AOvVaw3QldSLanmTOTBo89TnLgDt&ust=1669857643214000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCv087e1PsCFQAAAAAdAAAAABAE" alt="">
+                    </td>
+                    <td id="name"></td>
+                    <td id="description">kjk</td>
+                    <td id="price">jkj</td>
+                    <td id="actions">jkjk</td>
+                </tr>
+                 <tr class="tr-container"> 
+                    <td id="idu"></td>
+                    <td id="img-product">
+                        <img src="../../img/dress10.jpg" alt="">
+                    </td>
+                    <td id="name"></td>
+                    <td id="description">jkj</td>
+                    <td id="price">jkjkjk</td>
+                    <td id="actions">
+                    </td>
+                </tr>
+             -->
+            </tbody>
+        </table>
+        <div id = "form-dialog" style="display: none" >
+            <dialog open>
+                <h2 id="creat-product-edit">Create new product</h2>
+                <section>
+                    <div class = "input-form">
+
+                        <label for = "photo-product">Product Photo</label>
+                        <input type = "text" id="photo-product">
+                        
+                        <label for = "product-name">Name Product</label>
+                        <input type = "text" id="product-name">
+
+                        <label for = "descriptions">Description</label>
+                        <input type = "text" id="descriptions">
+                        
+                        <label for = "prices">Price</label>
+                        <input type = "number" id="prices">
+
+                </section>
+                <menu>
+                    <button onclick="onCancel()">Cancel</button>
+                    <button id="createEditButton" onclick="onCreate()">Save</button>
+                </menu>
+            </dialog>
+        </div>
+        <footer>
+            <div class="logo-buttom">
+                <img src="photoes/logo-removebg-preview.png" alt="">
+                <div class="app-contact">
+
+                    <img src="../../img/youtube.jpg" alt="">
+                    <img src="../../img/instagram.webp" alt="">
+                    <img src="../../img/twiter.webp" alt="">
+                    <img src="../../img/facebook.jpg" alt="">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p>  <i class="material-icons" class="call">call</i> 066394420 <br> <i class="material-icons" class="call">call</i> 0884166293</p>
+                </div>
+                <div class="Address">
+                    <h3>Address</h3>
+                    <p> <i class="material-icons" class="location">location_on</i>#256A, Wat Prachum Sakor (Wat Thmey) Road, Sangkat Chroy Chanvar, Khan Chroy Changvar, Phnom Penh</p>
+                </div>
+                <div class="about">
+                    <h3>About</h3>
+                    <p>The web site was the first of it's kind when it was established back in 2000. Since that time it has become the most popular and professional job announcements and classified advertising portal in Cambodia that offers the most legitimate service available in the country.</p>
+                </div>
+            </div>
+    </footer>
+    </div>
+</body>
+<script src="seller.js" ></script>
+</html>
